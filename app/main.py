@@ -8,7 +8,7 @@ app.include_router(imports.router, prefix="/imports", tags=["imports"])
 app.include_router(data.router, prefix="/data", tags=["data"])
 app.include_router(authentification.router, prefix="/authentification", tags=["authentification"])
 
-origins = ["http://localhost:3000"]
+origins = ["https://lavieillesardine.netlify.app"]
 
 app.add_middleware(
     CORSMiddleware,
